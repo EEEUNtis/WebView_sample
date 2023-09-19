@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebView 테스트</title>
+    <link rel="stylesheet" href="./main.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <h2> WebView 샘플 </h2>
+    <div style=" text-align: center; padding:10px;">
+        <input type="button" value="Toast 버튼" style="display: inline-block;" onClick="showAndroidToast('웹뷰 토스트 메시지 전송 test')" />
+
+        <script type="text/javascript">
+            function showAndroidToast(message) {
+                TisAndroid.showToast(message);
+            }
+        </script>
+    </div>
+    <div style=" text-align: center; padding:10px;">
+        <input type="file" value="파일선택" style="display: inline-block;" accept="image/*" />
+    </div>
+    <!-- <div style=" text-align: center;">
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+        </form>
+    </div> -->
+</body>
+</html>
